@@ -2,7 +2,34 @@
 <html>
 <head>
   <title>EddystoneURLDemo</title>
+  <script src="eddystone-advertising.js"></script>
+  <style>
+  body {
+    margin: 0;
+    background: black;
+  }
+  .left {
+    transform: translateX(-100%);
+  }
+  .right {
+    transform: translateX(100%);
+  }
+  img {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: auto;
+    max-width: 100%;
+    transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  </style>
 </head>
 <body>
+    <img class="center" src="assets/adidas.jpg" id="adidas">
+    <img class="right" src="assets/nike.jpg" id="nike">
 </body>
+<script src="img-switcher.js"></script>
 </html>
