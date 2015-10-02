@@ -44,7 +44,7 @@
         .then(adv => current_adv = adv);
       return;
     }
-    current_adv.unregisterAdvertisment()
+    current_adv.unregisterAdvertisement()
       .then(() => eddystone.registerAdvertisement(new_adv))
       .then(adv => current_adv = adv);
   };
